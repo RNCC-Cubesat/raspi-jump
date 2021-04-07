@@ -11,4 +11,11 @@ static ip_address=10.0.2.1/24
 interface wlan0
 EOF
 
+ipaddr=$(ip addr show dev wlan0 | grep "inet " | awk '{ print substr($2, 1, length($2)-3 )}')
+
+echo "Your Raspberry Pi's wireless IP address is " $ipaddr
+
+echo "You will need this to reconnect to your pi, so make sure you remember it or write it down"
+echo ""
+
 echo "Setup complete. Please reboot your raspberry pi by running the command \"sudo reboot\""
