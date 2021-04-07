@@ -11,4 +11,4 @@ static ip_address=10.0.2.1/24
 interface wlan0
 EOF
 
-echo "Setup complete. Please reboot your raspberry pi by running the command \"sudo poweroff\""
+echo "Setup complete. Please reboot your raspberry pi by running the command \"sudo reboot\""
