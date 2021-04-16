@@ -6,7 +6,7 @@
 cat <<EOF >> /etc/dhcpcd.conf
 # the lines below were Added by RNCC setup.sh script
 interface eth0
-static ip_address=10.0.2.1/24
+static ip_address=10.42.0.1/24
 
 interface wlan0
 EOF
